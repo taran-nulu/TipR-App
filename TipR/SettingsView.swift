@@ -56,7 +56,7 @@ struct SettingsView: View {
                             self.settings.isMyCurrencyFirst.toggle()
                         }) {
                             Image(systemName: "arrow.right.arrow.left.circle.fill")
-                                .imageScale(.medium)
+                                .imageScale(.large)
                         }
                         TextField("Decimal Ratio", text: $settings.ratio)
                             .keyboardType(.decimalPad)

@@ -23,6 +23,25 @@ struct ContentView: View {
         settings.isConversionEnabled ? settings.foreignCurrency : settings.myCurrency
     }
     
+    var currencyExchangeRatio: Double {
+        let settingsRatioAmount = Double(settings.ratio) ?? 1.0
+        if settings.isMyCurrencyFirst {
+            return 1/settingsRatioAmount
+        } else {
+            return settingsRatioAmount
+        }
+    }
+    
+    var myCurrencySubtotal: Double {
+        let subtotalAmount = Double(subTotal) ?? 0
+        return subtotalAmount * currencyExchangeRatio
+    }
+    
+    var myCurrencyTax: Double {
+        let taxAmount = Double(tax) ?? 0
+        return taxAmount * currencyExchangeRatio
+    }
+    
     var tipAmount: Double {
         let tipSelection = Double(tipPercentage)
         let subtotalAmount = Double(subTotal) ?? 0
@@ -30,6 +49,10 @@ struct ContentView: View {
         let tipValue = subtotalAmount / 100 * tipSelection
         
         return tipValue
+    }
+    
+    var myCurrencyTipAmount: Double {
+        return tipAmount * currencyExchangeRatio
     }
     
     var grandTotal: Double {
@@ -41,12 +64,20 @@ struct ContentView: View {
         return grandTotal
     }
     
+    var myCurrencyGrandTotal: Double {
+        return grandTotal * currencyExchangeRatio
+    }
+    
     var totalPerPerson: Double {
         let peopelCount = Double(numberOfPeopleIndex + 1)
         
         let amountPerPerson = grandTotal / peopelCount
         
         return amountPerPerson
+    }
+    
+    var myCurrencyTotalPerPerson: Double {
+        return totalPerPerson * currencyExchangeRatio
     }
     
     var inputSection: some View {
@@ -58,6 +89,7 @@ struct ContentView: View {
             }
             if settings.isConversionEnabled {
                 HStack {
+                    Text("\(myCurrencySubtotal, specifier: "%.2f")")
                     Text(settings.myCurrency.code)
                 }
             }
@@ -68,6 +100,7 @@ struct ContentView: View {
             }
             if settings.isConversionEnabled {
                 HStack {
+                    Text("\(myCurrencyTax, specifier: "%.2f")")
                     Text(settings.myCurrency.code)
                 }
             }
@@ -85,6 +118,10 @@ struct ContentView: View {
                 Text("Tips: \(tipAmount, specifier: "%.2f")")
                 Text(localCurrency.code)
             }
+            HStack {
+                Text("\(myCurrencyTipAmount, specifier: "%.2f")")
+                Text(settings.myCurrency.code)
+            }
         }
     }
     
@@ -93,6 +130,10 @@ struct ContentView: View {
             HStack {
                 Text("Grand total: \(grandTotal, specifier: "%.2f")")
                 Text(localCurrency.code)
+            }
+            HStack {
+                Text("\(myCurrencyGrandTotal, specifier: "%.2f")")
+                Text(settings.myCurrency.code)
             }
         }
     }
@@ -108,6 +149,11 @@ struct ContentView: View {
                 Text("Total per person: \(totalPerPerson, specifier: "%.2f")")
                 Text(localCurrency.code)
             }
+            HStack {
+                Text("\(myCurrencyTotalPerPerson, specifier: "%.2f")")
+                Text(settings.myCurrency.code)
+            }
+            
         }
     }
     
