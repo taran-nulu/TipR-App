@@ -38,18 +38,31 @@ struct SettingsView: View {
         NavigationView {
             Form {
                 Section(header: Text("My Currency").font(.subheadline)) {
-                    CurrencyPickerView(currency: $settings.myCurrency)
+                    HStack {
+                        Image(systemName: "square.fill")
+                            .imageScale(.small).foregroundColor(.red)
+                        CurrencyPickerView(currency: $settings.myCurrency)
+                    }
                 }
                 Section(header: Text("Foreign Currency").font(.subheadline)) {
-                    Toggle(isOn: $settings.isConversionEnabled) {
-                        Text("Enable")
-                        
+                    HStack {
+                        Image(systemName: "square.fill")
+                            .imageScale(.small).foregroundColor(.green)
+                        Toggle(isOn: $settings.isConversionEnabled) {
+                            Text("Enable")
+                        }
                     }
-                    CurrencyPickerView(currency: $settings.foreignCurrency)
-                        .disabled(!settings.isConversionEnabled)
+                    HStack {
+                        Image(systemName: "square.fill")
+                            .imageScale(.small).foregroundColor(.green)
+                        CurrencyPickerView(currency: $settings.foreignCurrency)
+                            .disabled(!settings.isConversionEnabled)
+                    }
                 }
                 Section(header: Text("Conversion").font(.subheadline)) {
                     HStack {
+                        Image(systemName: "square.fill")
+                            .imageScale(.small).foregroundColor(.purple)
                         Text("1")                    .foregroundColor(settings.isConversionEnabled ? Color.black : Color.gray)
                         Text(settings.isMyCurrencyFirst ? settings.myCurrency.code : settings.foreignCurrency.code)                    .foregroundColor(settings.isConversionEnabled ? Color.black : Color.gray)
                         Button(action: {

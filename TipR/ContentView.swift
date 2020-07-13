@@ -83,23 +83,31 @@ struct ContentView: View {
     var inputSection: some View {
         Section {
             HStack {
+                Image(systemName: "circle.fill")
+                    .imageScale(.small).foregroundColor(.red)
                 TextField("Subtotal", text: $subTotal)
                     .keyboardType(.decimalPad)
                 Text(localCurrency.code)
             }
             if settings.isConversionEnabled {
                 HStack {
+                    Image(systemName: "circle.fill")
+                        .imageScale(.small).foregroundColor(.clear)
                     Text("\(myCurrencySubtotal, specifier: "%.2f")")
                     Text(settings.myCurrency.code)
                 }
             }
             HStack {
+                Image(systemName: "circle.fill")
+                    .imageScale(.small).foregroundColor(.red)
                 TextField("Tax", text: $tax)
                     .keyboardType(.decimalPad)
                 Text(localCurrency.code)
             }
             if settings.isConversionEnabled {
                 HStack {
+                    Image(systemName: "circle.fill")
+                        .imageScale(.small).foregroundColor(.clear)
                     Text("\(myCurrencyTax, specifier: "%.2f")")
                     Text(settings.myCurrency.code)
                 }
@@ -109,16 +117,24 @@ struct ContentView: View {
     
     var tipSection: some View {
         Section {
-            Picker("Tip %", selection: $tipPercentage) {
-                ForEach(0..<101) {
-                    Text("\($0)%")
+            HStack {
+                Image(systemName: "circle.fill")
+                    .imageScale(.small).foregroundColor(.green)
+                Picker("Tip %", selection: $tipPercentage) {
+                    ForEach(0..<101) {
+                        Text("\($0)%")
+                    }
                 }
             }
             HStack {
+                Image(systemName: "circle.fill")
+                    .imageScale(.small).foregroundColor(.green)
                 Text("Tips: \(tipAmount, specifier: "%.2f")")
                 Text(localCurrency.code)
             }
             HStack {
+                Image(systemName: "circle.fill")
+                    .imageScale(.small).foregroundColor(.clear)
                 Text("\(myCurrencyTipAmount, specifier: "%.2f")")
                 Text(settings.myCurrency.code)
             }
@@ -128,10 +144,14 @@ struct ContentView: View {
     var totalSection: some View {
         Section {
             HStack {
+                Image(systemName: "circle.fill")
+                    .imageScale(.small).foregroundColor(.purple)
                 Text("Grand total: \(grandTotal, specifier: "%.2f")")
                 Text(localCurrency.code)
             }
             HStack {
+                Image(systemName: "circle.fill")
+                    .imageScale(.small).foregroundColor(.clear)
                 Text("\(myCurrencyGrandTotal, specifier: "%.2f")")
                 Text(settings.myCurrency.code)
             }
@@ -140,16 +160,24 @@ struct ContentView: View {
     
     var peopleSection: some View {
         Section {
-            Picker("Number of People", selection: $numberOfPeopleIndex) {
-                ForEach(1..<100) {
-                    Text("\($0) people")
+            HStack {
+                Image(systemName: "circle.fill")
+                    .imageScale(.small).foregroundColor(.yellow)
+                Picker("Number of People", selection: $numberOfPeopleIndex) {
+                    ForEach(1..<100) {
+                        Text("\($0) people")
+                    }
                 }
             }
             HStack {
+                Image(systemName: "circle.fill")
+                    .imageScale(.small).foregroundColor(.yellow)
                 Text("Total per person: \(totalPerPerson, specifier: "%.2f")")
                 Text(localCurrency.code)
             }
             HStack {
+                Image(systemName: "circle.fill")
+                    .imageScale(.small).foregroundColor(.clear)
                 Text("\(myCurrencyTotalPerPerson, specifier: "%.2f")")
                 Text(settings.myCurrency.code)
             }
