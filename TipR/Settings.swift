@@ -15,20 +15,22 @@ let foreignCurrencyKey = "foreignCurrency"
 let isMyCurrencyFirstKey = "isMyCurrencyFirst"
 let ratioKey = "ratio"
 
+let usaIndex = 243
+
 class Settings: ObservableObject {
     init() {
         if let data = UserDefaults.standard.object(forKey: myCurrencyKey) as? Data {
-            self.myCurrency = (try? JSONDecoder().decode(Currency.self, from: data)) ?? Settings.currencies.table.first!
+            self.myCurrency = (try? JSONDecoder().decode(Currency.self, from: data)) ?? Settings.currencies.table[usaIndex]
         } else {
-            self.myCurrency = Settings.currencies.table.first!
+            self.myCurrency = Settings.currencies.table[usaIndex]
         }
 
         self.isConversionEnabled = UserDefaults.standard.object(forKey: isConversionEnabledKey) as? Bool ?? false
 
         if let data = UserDefaults.standard.object(forKey: foreignCurrencyKey) as? Data {
-            self.foreignCurrency = (try? JSONDecoder().decode(Currency.self, from: data)) ?? Settings.currencies.table.last!
+            self.foreignCurrency = (try? JSONDecoder().decode(Currency.self, from: data)) ?? Settings.currencies.table.first!
         } else {
-            self.foreignCurrency = Settings.currencies.table.last!
+            self.foreignCurrency = Settings.currencies.table.first!
         }
 
         self.isMyCurrencyFirst = UserDefaults.standard.object(forKey: isMyCurrencyFirstKey) as? Bool ?? true
