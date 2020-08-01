@@ -63,8 +63,8 @@ struct SettingsView: View {
                     HStack {
                         Image(systemName: "square.fill")
                             .imageScale(.small).foregroundColor(.purple)
-                        Text("1")                    .foregroundColor(settings.isConversionEnabled ? Color.black : Color.gray)
-                        Text(settings.isMyCurrencyFirst ? settings.myCurrency.code : settings.foreignCurrency.code)                    .foregroundColor(settings.isConversionEnabled ? Color.black : Color.gray)
+                        Text("1")                    .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
+                        Text(settings.isMyCurrencyFirst ? settings.myCurrency.code : settings.foreignCurrency.code)                    .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
                         Button(action: {
                             self.settings.isMyCurrencyFirst.toggle()
                         }) {
@@ -72,8 +72,8 @@ struct SettingsView: View {
                                 .imageScale(.large)
                         }
                         TextField("Decimal Ratio", text: $settings.ratio)
-                            .keyboardType(.decimalPad)
-                        Text(settings.isMyCurrencyFirst ? settings.foreignCurrency.code : settings.myCurrency.code)                    .foregroundColor(settings.isConversionEnabled ? Color.black : Color.gray)
+                            .keyboardType(.decimalPad) .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
+                        Text(settings.isMyCurrencyFirst ? settings.foreignCurrency.code : settings.myCurrency.code)                    .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
                     }
                 }
                     // TODO: Change disabled color to same gray as foreign currency picker.
