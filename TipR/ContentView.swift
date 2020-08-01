@@ -198,7 +198,7 @@ struct ContentView: View {
                 totalSection
                 peopleSection
             }
-            .navigationBarTitle("Tip₹")
+            .navigationBarTitle(settings.isConversionEnabled ? "Tip₹" : "TipR")
             .navigationBarItems(
                 trailing: Button(
                     action: { self.showSettings = true }
