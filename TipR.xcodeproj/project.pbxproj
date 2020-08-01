@@ -20,6 +20,7 @@
 		26D7A0912471BAF700AE1EA0 /* iso-currency.xml in Resources */ = {isa = PBXBuildFile; fileRef = 26D7A0902471BAF700AE1EA0 /* iso-currency.xml */; };
 		26D7A0942471D42D00AE1EA0 /* XMLParsing in Frameworks */ = {isa = PBXBuildFile; productRef = 26D7A0932471D42D00AE1EA0 /* XMLParsing */; };
 		26E24601248C40D100B41E44 /* CurrencyPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E24600248C40D100B41E44 /* CurrencyPickerView.swift */; };
+		26E7710C24D61341002E6680 /* AnyGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E7710B24D61341002E6680 /* AnyGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		26B24D07245FA8F90066E79E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		26D7A0902471BAF700AE1EA0 /* iso-currency.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "iso-currency.xml"; sourceTree = "<group>"; };
 		26E24600248C40D100B41E44 /* CurrencyPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPickerView.swift; sourceTree = "<group>"; };
+		26E7710B24D61341002E6680 /* AnyGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyGestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		267B6771235BD8D900A4186A /* TipR */ = {
 			isa = PBXGroup;
 			children = (
+				26E7710B24D61341002E6680 /* AnyGestureRecognizer.swift */,
 				267B6772235BD8D900A4186A /* AppDelegate.swift */,
 				267B6778235BD8DC00A4186A /* Assets.xcassets */,
 				267B6776235BD8D900A4186A /* ContentView.swift */,
@@ -293,6 +296,7 @@
 				267B6775235BD8D900A4186A /* SceneDelegate.swift in Sources */,
 				26B24D08245FA8F90066E79E /* SettingsView.swift in Sources */,
 				267B6777235BD8D900A4186A /* ContentView.swift in Sources */,
+				26E7710C24D61341002E6680 /* AnyGestureRecognizer.swift in Sources */,
 				26E24601248C40D100B41E44 /* CurrencyPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

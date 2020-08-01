@@ -85,7 +85,13 @@ struct ContentView: View {
             HStack {
                 Image(systemName: "circle.fill")
                     .imageScale(.small).foregroundColor(.red)
-                TextField("Subtotal", text: $subTotal)
+                TextField("Subtotal", text: $subTotal, onEditingChanged: { (editing) in
+                    if editing {
+                        print("editing")
+                    } else {
+                        print("### editing ended")
+                    }
+                })
                     .keyboardType(.decimalPad)
                 Text(localCurrency.code)
             }

@@ -75,9 +75,7 @@ struct SettingsView: View {
                             .keyboardType(.decimalPad) .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
                         Text(settings.isMyCurrencyFirst ? settings.foreignCurrency.code : settings.myCurrency.code)                    .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
                     }
-                }
-                    // TODO: Change disabled color to same gray as foreign currency picker.
-                    .disabled(!settings.isConversionEnabled)
+                }.disabled(!settings.isConversionEnabled)
             }
             .navigationBarTitle("Settings")
             .navigationBarItems(
