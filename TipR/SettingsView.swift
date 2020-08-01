@@ -82,8 +82,7 @@ struct SettingsView: View {
                 trailing: Button(
                     action: {self.show = false}
                 ) {
-                    Image(systemName: "xmark.circle.fill")
-                        .imageScale(.large)
+                    Text("Save")
                 }
             )
         }

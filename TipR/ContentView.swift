@@ -209,8 +209,7 @@ struct ContentView: View {
                 trailing: Button(
                     action: { self.showSettings = true }
                 ) {
-                    Image(systemName: "ellipsis.circle.fill")
-                        .imageScale(.large)
+                    Text("Settings")
                 }
             )
                 .sheet(isPresented: $showSettings) {
