@@ -132,11 +132,13 @@ struct ContentView: View {
                 Text("Tips: \(tipAmount, specifier: "%.2f")")
                 Text(localCurrency.code)
             }
-            HStack {
-                Image(systemName: "circle.fill")
-                    .imageScale(.small).foregroundColor(.clear)
-                Text("\(myCurrencyTipAmount, specifier: "%.2f")")
-                Text(settings.myCurrency.code)
+            if settings.isConversionEnabled {
+                HStack {
+                    Image(systemName: "circle.fill")
+                        .imageScale(.small).foregroundColor(.clear)
+                    Text("\(myCurrencyTipAmount, specifier: "%.2f")")
+                    Text(settings.myCurrency.code)
+                }
             }
         }
     }
@@ -149,11 +151,13 @@ struct ContentView: View {
                 Text("Grand total: \(grandTotal, specifier: "%.2f")")
                 Text(localCurrency.code)
             }
-            HStack {
-                Image(systemName: "circle.fill")
-                    .imageScale(.small).foregroundColor(.clear)
-                Text("\(myCurrencyGrandTotal, specifier: "%.2f")")
-                Text(settings.myCurrency.code)
+            if settings.isConversionEnabled {
+                HStack {
+                    Image(systemName: "circle.fill")
+                        .imageScale(.small).foregroundColor(.clear)
+                    Text("\(myCurrencyGrandTotal, specifier: "%.2f")")
+                    Text(settings.myCurrency.code)
+                }
             }
         }
     }
@@ -175,13 +179,14 @@ struct ContentView: View {
                 Text("Total per person: \(totalPerPerson, specifier: "%.2f")")
                 Text(localCurrency.code)
             }
-            HStack {
-                Image(systemName: "circle.fill")
-                    .imageScale(.small).foregroundColor(.clear)
-                Text("\(myCurrencyTotalPerPerson, specifier: "%.2f")")
-                Text(settings.myCurrency.code)
+            if settings.isConversionEnabled {
+                HStack {
+                    Image(systemName: "circle.fill")
+                        .imageScale(.small).foregroundColor(.clear)
+                    Text("\(myCurrencyTotalPerPerson, specifier: "%.2f")")
+                    Text(settings.myCurrency.code)
+                }
             }
-            
         }
     }
     
