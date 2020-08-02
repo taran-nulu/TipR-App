@@ -52,30 +52,33 @@ struct SettingsView: View {
                             Text("Enable")
                         }
                     }
-                    HStack {
-                        Image(systemName: "square.fill")
-                            .imageScale(.small).foregroundColor(.green)
-                        CurrencyPickerView(currency: $settings.foreignCurrency)
-                            .disabled(!settings.isConversionEnabled)
+                    if settings.isConversionEnabled {
+                        HStack {
+                            Image(systemName: "square.fill")
+                                .imageScale(.small).foregroundColor(.green)
+                            CurrencyPickerView(currency: $settings.foreignCurrency)
+                        }
                     }
                 }
-                Section(header: Text("Conversion").font(.subheadline)) {
-                    HStack {
-                        Image(systemName: "square.fill")
-                            .imageScale(.small).foregroundColor(.purple)
-                        Text("1")                    .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
-                        Text(settings.isMyCurrencyFirst ? settings.myCurrency.code : settings.foreignCurrency.code)                    .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
-                        Button(action: {
-                            self.settings.isMyCurrencyFirst.toggle()
-                        }) {
-                            Image(systemName: "arrow.right.arrow.left.circle.fill")
-                                .imageScale(.large)
+                if settings.isConversionEnabled {
+                    Section(header: Text("Conversion").font(.subheadline)) {
+                        HStack {
+                            Image(systemName: "square.fill")
+                                .imageScale(.small).foregroundColor(.purple)
+                            Text("1")                    .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
+                            Text(settings.isMyCurrencyFirst ? settings.myCurrency.code : settings.foreignCurrency.code)                    .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
+                            Button(action: {
+                                self.settings.isMyCurrencyFirst.toggle()
+                            }) {
+                                Image(systemName: "arrow.right.arrow.left.circle.fill")
+                                    .imageScale(.large)
+                            }
+                            TextField("Decimal Ratio", text: $settings.ratio)
+                                .keyboardType(.decimalPad) .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
+                            Text(settings.isMyCurrencyFirst ? settings.foreignCurrency.code : settings.myCurrency.code)                    .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
                         }
-                        TextField("Decimal Ratio", text: $settings.ratio)
-                            .keyboardType(.decimalPad) .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
-                        Text(settings.isMyCurrencyFirst ? settings.foreignCurrency.code : settings.myCurrency.code)                    .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
                     }
-                }.disabled(!settings.isConversionEnabled)
+                }
             }
             .navigationBarTitle("Settings")
             .navigationBarItems(
