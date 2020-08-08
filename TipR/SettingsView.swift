@@ -33,6 +33,7 @@ struct Currency: Codable, Hashable, Identifiable {
 struct SettingsView: View {
     @Binding var show: Bool
     @ObservedObject var settings: Settings
+    @ObservedObject var keyboardResponder = KeyboardResponder()
     
     var body: some View {
         NavigationView {
@@ -92,7 +93,7 @@ struct SettingsView: View {
                     Text("Save")
                 }
             )
-        }
+        }.offset(y: -keyboardResponder.currentHeight*0.9)
     }
 }
 

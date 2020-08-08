@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2647EC4F24DF513B004D7491 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2647EC4E24DF513B004D7491 /* KeyboardResponder.swift */; };
 		266861A4249455D200207D15 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 266861A3249455D200207D15 /* Settings.swift */; };
 		267B6773235BD8D900A4186A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B6772235BD8D900A4186A /* AppDelegate.swift */; };
 		267B6775235BD8D900A4186A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267B6774235BD8D900A4186A /* SceneDelegate.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2647EC4E24DF513B004D7491 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
 		266861A3249455D200207D15 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		267B676F235BD8D900A4186A /* TipR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		267B6772235BD8D900A4186A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				26E24600248C40D100B41E44 /* CurrencyPickerView.swift */,
 				267B6780235BD8DC00A4186A /* Info.plist */,
 				26D7A0902471BAF700AE1EA0 /* iso-currency.xml */,
+				2647EC4E24DF513B004D7491 /* KeyboardResponder.swift */,
 				267B677D235BD8DC00A4186A /* LaunchScreen.storyboard */,
 				267B677A235BD8DC00A4186A /* Preview Content */,
 				267B6774235BD8D900A4186A /* SceneDelegate.swift */,
@@ -296,6 +299,7 @@
 				267B6775235BD8D900A4186A /* SceneDelegate.swift in Sources */,
 				26B24D08245FA8F90066E79E /* SettingsView.swift in Sources */,
 				267B6777235BD8D900A4186A /* ContentView.swift in Sources */,
+				2647EC4F24DF513B004D7491 /* KeyboardResponder.swift in Sources */,
 				26E7710C24D61341002E6680 /* AnyGestureRecognizer.swift in Sources */,
 				26E24601248C40D100B41E44 /* CurrencyPickerView.swift in Sources */,
 			);
