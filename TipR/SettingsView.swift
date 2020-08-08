@@ -67,15 +67,19 @@ struct SettingsView: View {
                                 .imageScale(.small).foregroundColor(.purple)
                             Text("1")                    .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
                             Text(settings.isMyCurrencyFirst ? settings.myCurrency.code : settings.foreignCurrency.code)                    .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
-                            Button(action: {
-                                self.settings.isMyCurrencyFirst.toggle()
-                            }) {
-                                Image(systemName: "arrow.right.arrow.left.circle.fill")
-                                    .imageScale(.large)
-                            }
+                            Text("=")
                             TextField("Decimal Ratio", text: $settings.ratio)
                                 .keyboardType(.decimalPad) .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
                             Text(settings.isMyCurrencyFirst ? settings.foreignCurrency.code : settings.myCurrency.code)                    .foregroundColor(settings.isConversionEnabled ? Color.primary : Color.gray)
+                        }
+                        HStack {
+                            Image(systemName: "square.fill")
+                                .imageScale(.small).foregroundColor(.purple)
+                            Button(action: {
+                                self.settings.isMyCurrencyFirst.toggle()
+                            }) {
+                                Text("Swap Currencies Above")
+                            }
                         }
                     }
                 }
