@@ -17,7 +17,7 @@
                BlueprintIdentifier = "267B676E235BD8D900A4186A"
                BuildableName = "TipR.app"
                BlueprintName = "TipR"
-               ReferencedContainer = "container:TipR.xcodeproj">
+               ReferencedContainer = "container: .xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "267B6784235BD8DC00A4186A"
                BuildableName = "TipRTests.xctest"
                BlueprintName = "TipRTests"
-               ReferencedContainer = "container:TipR.xcodeproj">
+               ReferencedContainer = "container: .xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "267B678F235BD8DC00A4186A"
                BuildableName = "TipRUITests.xctest"
                BlueprintName = "TipRUITests"
-               ReferencedContainer = "container:TipR.xcodeproj">
+               ReferencedContainer = "container: .xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -67,7 +67,7 @@
             BlueprintIdentifier = "267B676E235BD8D900A4186A"
             BuildableName = "TipR.app"
             BlueprintName = "TipR"
-            ReferencedContainer = "container:TipR.xcodeproj">
+            ReferencedContainer = "container: .xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -84,7 +84,7 @@
             BlueprintIdentifier = "267B676E235BD8D900A4186A"
             BuildableName = "TipR.app"
             BlueprintName = "TipR"
-            ReferencedContainer = "container:TipR.xcodeproj">
+            ReferencedContainer = "container: .xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

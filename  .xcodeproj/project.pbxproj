@@ -235,7 +235,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 267B676A235BD8D900A4186A /* Build configuration list for PBXProject "TipR" */;
+			buildConfigurationList = 267B676A235BD8D900A4186A /* Build configuration list for PBXProject " " */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -585,7 +585,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		267B676A235BD8D900A4186A /* Build configuration list for PBXProject "TipR" */ = {
+		267B676A235BD8D900A4186A /* Build configuration list for PBXProject " " */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				267B6797235BD8DC00A4186A /* Debug */,
