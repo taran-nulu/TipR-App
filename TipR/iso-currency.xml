@@ -105,7 +105,7 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>BAHAMAS (THE)</CtryNm>
+			<CtryNm>BAHAMAS</CtryNm>
 			<CcyNm>Bahamian Dollar</CcyNm>
 			<Ccy>BSD</Ccy>
 			<CcyNbr>044</CcyNbr>
@@ -224,7 +224,7 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>BRITISH INDIAN OCEAN TERRITORY (THE)</CtryNm>
+			<CtryNm>BRITISH INDIAN OCEAN TERRITORY</CtryNm>
 			<CcyNm>US Dollar</CcyNm>
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
@@ -287,14 +287,14 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>CAYMAN ISLANDS (THE)</CtryNm>
+			<CtryNm>CAYMAN ISLANDS</CtryNm>
 			<CcyNm>Cayman Islands Dollar</CcyNm>
 			<Ccy>KYD</Ccy>
 			<CcyNbr>136</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>CENTRAL AFRICAN REPUBLIC (THE)</CtryNm>
+			<CtryNm>CENTRAL AFRICAN REPUBLIC</CtryNm>
 			<CcyNm>CFA Franc BEAC</CcyNm>
 			<Ccy>XAF</Ccy>
 			<CcyNbr>950</CcyNbr>
@@ -329,7 +329,7 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>COCOS (KEELING) ISLANDS (THE)</CtryNm>
+			<CtryNm>COCOS (KEELING) ISLANDS</CtryNm>
 			<CcyNm>Australian Dollar</CcyNm>
 			<Ccy>AUD</Ccy>
 			<CcyNbr>036</CcyNbr>
@@ -343,7 +343,7 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>COMOROS (THE)</CtryNm>
+			<CtryNm>COMOROS</CtryNm>
 			<CcyNm>Comorian Franc </CcyNm>
 			<Ccy>KMF</Ccy>
 			<CcyNbr>174</CcyNbr>
@@ -357,14 +357,14 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>CONGO (THE)</CtryNm>
+			<CtryNm>CONGO</CtryNm>
 			<CcyNm>CFA Franc BEAC</CcyNm>
 			<Ccy>XAF</Ccy>
 			<CcyNbr>950</CcyNbr>
 			<CcyMnrUnts>0</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>COOK ISLANDS (THE)</CtryNm>
+			<CtryNm>COOK ISLANDS</CtryNm>
 			<CcyNm>New Zealand Dollar</CcyNm>
 			<Ccy>NZD</Ccy>
 			<CcyNbr>554</CcyNbr>
@@ -448,7 +448,7 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>DOMINICAN REPUBLIC (THE)</CtryNm>
+			<CtryNm>DOMINICAN REPUBLIC</CtryNm>
 			<CcyNm>Dominican Peso</CcyNm>
 			<Ccy>DOP</Ccy>
 			<CcyNbr>214</CcyNbr>
@@ -518,14 +518,14 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>FALKLAND ISLANDS (THE) [MALVINAS]</CtryNm>
+			<CtryNm>FALKLAND ISLANDS [MALVINAS]</CtryNm>
 			<CcyNm>Falkland Islands Pound</CcyNm>
 			<Ccy>FKP</Ccy>
 			<CcyNbr>238</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>FAROE ISLANDS (THE)</CtryNm>
+			<CtryNm>FAROE ISLANDS</CtryNm>
 			<CcyNm>Danish Krone</CcyNm>
 			<Ccy>DKK</Ccy>
 			<CcyNbr>208</CcyNbr>
@@ -567,7 +567,7 @@
 			<CcyMnrUnts>0</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>FRENCH SOUTHERN TERRITORIES (THE)</CtryNm>
+			<CtryNm>FRENCH SOUTHERN TERRITORIES</CtryNm>
 			<CcyNm>Euro</CcyNm>
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
@@ -581,7 +581,7 @@
 			<CcyMnrUnts>0</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>GAMBIA (THE)</CtryNm>
+			<CtryNm>GAMBIA</CtryNm>
 			<CcyNm>Dalasi</CcyNm>
 			<Ccy>GMD</Ccy>
 			<CcyNbr>270</CcyNbr>
@@ -707,7 +707,7 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>HOLY SEE (THE)</CtryNm>
+			<CtryNm>HOLY SEE</CtryNm>
 			<CcyNm>Euro</CcyNm>
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
@@ -882,7 +882,7 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>LAO PEOPLE’S DEMOCRATIC REPUBLIC (THE)</CtryNm>
+			<CtryNm>LAO PEOPLE’S DEMOCRATIC REPUBLIC</CtryNm>
 			<CcyNm>Lao Kip</CcyNm>
 			<Ccy>LAK</Ccy>
 			<CcyNbr>418</CcyNbr>
@@ -1008,7 +1008,7 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>MARSHALL ISLANDS (THE)</CtryNm>
+			<CtryNm>MARSHALL ISLANDS</CtryNm>
 			<CcyNm>US Dollar</CcyNm>
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
@@ -1148,7 +1148,7 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>NETHERLANDS (THE)</CtryNm>
+			<CtryNm>NETHERLANDS</CtryNm>
 			<CcyNm>Euro</CcyNm>
 			<Ccy>EUR</Ccy>
 			<CcyNbr>978</CcyNbr>
@@ -1176,7 +1176,7 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>NIGER (THE)</CtryNm>
+			<CtryNm>NIGER</CtryNm>
 			<CcyNm>CFA Franc BCEAO</CcyNm>
 			<Ccy>XOF</Ccy>
 			<CcyNbr>952</CcyNbr>
@@ -1204,7 +1204,7 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>NORTHERN MARIANA ISLANDS (THE)</CtryNm>
+			<CtryNm>NORTHERN MARIANA ISLANDS</CtryNm>
 			<CcyNm>US Dollar</CcyNm>
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
@@ -1267,7 +1267,7 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>PHILIPPINES (THE)</CtryNm>
+			<CtryNm>PHILIPPINES</CtryNm>
 			<CcyNm>Philippine Peso</CcyNm>
 			<Ccy>PHP</Ccy>
 			<CcyNbr>608</CcyNbr>
@@ -1323,7 +1323,7 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>RUSSIAN FEDERATION (THE)</CtryNm>
+			<CtryNm>RUSSIAN FEDERATION</CtryNm>
 			<CcyNm>Russian Ruble</CcyNm>
 			<Ccy>RUB</Ccy>
 			<CcyNbr>643</CcyNbr>
@@ -1519,7 +1519,7 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>SUDAN (THE)</CtryNm>
+			<CtryNm>SUDAN</CtryNm>
 			<CcyNm>Sudanese Pound</CcyNm>
 			<Ccy>SDG</Ccy>
 			<CcyNbr>938</CcyNbr>
@@ -1652,7 +1652,7 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>TURKS AND CAICOS ISLANDS (THE)</CtryNm>
+			<CtryNm>TURKS AND CAICOS ISLANDS</CtryNm>
 			<CcyNm>US Dollar</CcyNm>
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
@@ -1680,28 +1680,28 @@
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>UNITED ARAB EMIRATES (THE)</CtryNm>
+			<CtryNm>UNITED ARAB EMIRATES</CtryNm>
 			<CcyNm>UAE Dirham</CcyNm>
 			<Ccy>AED</Ccy>
 			<CcyNbr>784</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND (THE)</CtryNm>
+			<CtryNm>UNITED KINGDOM OF GREAT BRITAIN AND NORTHERN IRELAND</CtryNm>
 			<CcyNm>Pound Sterling</CcyNm>
 			<Ccy>GBP</Ccy>
 			<CcyNbr>826</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>UNITED STATES MINOR OUTLYING ISLANDS (THE)</CtryNm>
+			<CtryNm>UNITED STATES MINOR OUTLYING ISLANDS</CtryNm>
 			<CcyNm>US Dollar</CcyNm>
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
 			<CcyMnrUnts>2</CcyMnrUnts>
 		</CcyNtry>
 		<CcyNtry>
-			<CtryNm>UNITED STATES OF AMERICA (THE)</CtryNm>
+			<CtryNm>UNITED STATES OF AMERICA</CtryNm>
 			<CcyNm>US Dollar</CcyNm>
 			<Ccy>USD</Ccy>
 			<CcyNbr>840</CcyNbr>
