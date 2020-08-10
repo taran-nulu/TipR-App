@@ -94,6 +94,7 @@ struct SettingsView: View {
                 }
             )
         }.offset(y: -keyboardResponder.currentHeight*0.9)
+            .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

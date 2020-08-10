@@ -215,7 +215,7 @@ struct ContentView: View {
                 .sheet(isPresented: $showSettings) {
                     SettingsView(show: self.$showSettings, settings: self.settings)
             }
-        }
+        }.navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
