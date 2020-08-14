@@ -33,7 +33,7 @@ struct Currency: Codable, Hashable, Identifiable {
 struct SettingsView: View {
     @Binding var show: Bool
     @ObservedObject var settings: Settings
-    @ObservedObject var keyboardResponder = KeyboardResponder()
+    @ObservedObject var keyboardResponder: KeyboardResponder
     
     var body: some View {
         NavigationView {
@@ -101,8 +101,9 @@ struct SettingsView: View {
 struct Settings_Previews: PreviewProvider {
     @State static var showSettings = true
     @ObservedObject static var settings = Settings()
-    
+    @ObservedObject static var keyboardResponder = KeyboardResponder()
+
     static var previews: some View {
-        SettingsView(show: $showSettings, settings: settings)
+        SettingsView(show: $showSettings, settings: settings, keyboardResponder: keyboardResponder)
     }
 }

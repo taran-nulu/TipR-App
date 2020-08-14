@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @ObservedObject var settings = Settings()
+    @ObservedObject var keyboardResponder = KeyboardResponder()
     @State private var showSettings = false
 
     var body: some View {
@@ -24,7 +25,7 @@ struct ContentView: View {
                 }
             )
                 .sheet(isPresented: $showSettings) {
-                    SettingsView(show: self.$showSettings, settings: self.settings)
+                    SettingsView(show: self.$showSettings, settings: self.settings, keyboardResponder: self.keyboardResponder)
             }
         }.navigationViewStyle(StackNavigationViewStyle())
     }
