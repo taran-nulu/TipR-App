@@ -194,12 +194,16 @@ struct CalculatorView: View {
     }
     
     var body: some View {
-        Form {
-            inputSection
-            tipSection
-            totalSection
-            peopleSection
+        NavigationView {
+            Form {
+                inputSection
+                tipSection
+                totalSection
+                peopleSection
+            }
+            .navigationBarTitle(settings.isConversionEnabled ? "Tip₹" : "TipR")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
@@ -210,4 +214,3 @@ struct CalculatorView_Previews: PreviewProvider {
         CalculatorView(settings: settings)
     }
 }
-

@@ -11,23 +11,21 @@ import SwiftUI
 struct ContentView: View {
     @ObservedObject var settings = Settings()
     @ObservedObject var keyboardResponder = KeyboardResponder()
-    @State private var showSettings = false
-
+    @State private var showSettings = true
+    
     var body: some View {
-        NavigationView {
+        TabView {
             CalculatorView(settings: settings)
-            .navigationBarTitle(settings.isConversionEnabled ? "Tip₹" : "TipR")
-            .navigationBarItems(
-                trailing: Button(
-                    action: { self.showSettings = true }
-                ) {
-                    Text("Settings")
-                }
-            )
-                .sheet(isPresented: $showSettings) {
-                    SettingsView(show: self.$showSettings, settings: self.settings, keyboardResponder: self.keyboardResponder)
+                .tabItem {
+                    Image(systemName: "percent")
+                    Text("Calculator")
             }
-        }.navigationViewStyle(StackNavigationViewStyle())
+            SettingsView(show: self.$showSettings, settings: self.settings, keyboardResponder: self.keyboardResponder)
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Settings")
+            }
+        }
     }
 }
 
@@ -36,4 +34,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-

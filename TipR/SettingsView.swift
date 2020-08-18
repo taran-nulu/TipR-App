@@ -86,13 +86,6 @@ struct SettingsView: View {
                 }
             }
             .navigationBarTitle("Settings")
-            .navigationBarItems(
-                trailing: Button(
-                    action: {self.show = false}
-                ) {
-                    Text("Save")
-                }
-            )
         }.offset(y: -keyboardResponder.currentHeight*0.9)
             .navigationViewStyle(StackNavigationViewStyle())
     }
